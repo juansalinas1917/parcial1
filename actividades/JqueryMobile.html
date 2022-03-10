@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JqueryMobile</title>
+	<link rel="stylesheet" href="Jquerymobile/css/themes/mitema.css" />
+  	<link rel="stylesheet" href="Jquerymobile/css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="Jquerymobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Jquerymobile/themes/DarkPurple.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		footer{
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 20px rgb(225, 105, 255);
+			text-align: center;
+            width: 100%;
+        }
+	</style>
+</head>
+<body align="center">
+	<div data-role="page" id="inicio" data-theme="a" style="background: #2c2c2c;">
+
+		<div data-role="header">
+			<h1>Mario Bros</h1>
+			<br>
+			<p>Super Mario Bros. o Super Mario Brothers es un videojuego de plataformas, diseñado por Shigeru Miyamoto, lanzado el 13 de septiembre de 1985 y producido por la empresa japonesa Nintendo, para la consola Nintendo Entertainment System.</p>
+			<br>
+			<img src="imagenes/JqueryMobile/logo.webp" width="70%" alt="">
+			<br>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<footer>Salinas Beltrán Juan Manuel 6AVP</footer>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="star">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="productos" data-theme="a">
+		<div data-role="header">
+			<h1>Ejemplo APP</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Listado de productos</h2><hr>
+			<ol data-role="listview">
+				<li>Mario Bros 1 (NES)</li>
+				<li>Mario Bros Odissey</li>
+				<li>Mario Kart</li>
+				<li>Mario Party</li>
+			</ol>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<footer>Salinas Beltrán Juan Manuel 6AVP</footer>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="star">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="carrito" data-theme="a">
+		<div data-role="header">
+			<h1>Ejemplo APP</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Carrito de compras</h2><hr>
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/1.jpg" alt=""><h2>Mario Bros (NES)</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/2.jpg" alt=""><h2>Mario Bros Odissey</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/3.jpg" alt=""><h2>Mario Kart</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/4.jpg" alt=""><h2>Mario Party</h2></a>
+				</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<footer>Salinas Beltrán Juan Manuel 6AVP</footer>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="gear">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+<script>
+	function goindex(){
+		window.location.href = "../index.html";
+	}
+</script>
